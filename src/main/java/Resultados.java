@@ -56,11 +56,11 @@ public class Resultados {
 
         this.verificarValorInvalido(this.Colesterol_Total);
 
-        if(this.Triglicerides < Nivel_Desejavel ){
+        if(this.Colesterol_Total < Nivel_Desejavel ){
             return "Nivel Desejavel de Colesterol Total";
         }
         else {
-            if (this.Triglicerides <= Nivel_Limitrofe){
+            if (this.Colesterol_Total <= Nivel_Limitrofe ){
                 return "Nivel Limitrofe de Colesterol Total";
             }
             else {
@@ -152,11 +152,11 @@ public class Resultados {
         }
         else {
             if (this.Glicose <= Nivel_Desejavel){
-                return "Nivel de Glicose indica Glicemia de jejum inapropriada";
+                return "Nivel de Desejavel de Glicose";
             }
             else {
                 if (this.Glicose <= Glicemia_de_jejum_inapropriada){
-                    return "Nivel Alto de Glicose";
+                    return "Nivel de Glicose indica Glicemia de jejum inapropriada";
                 }
                 else {
                     return "Nivel de Glicose indica Diabetes";
